@@ -1,0 +1,70 @@
+$nav-bg: #350077;
+$nav-el: #818181;
+$nav-el-hv: #f1f1f1;
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* SIDEBAR */
+nav {
+    height: 100%;
+    width: 125px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $nav-bg;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  
+  .nav-text {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: $nav-el;
+    display: inline;
+  }
+ 
+  /* SIDEBAR ACTIONS */
+  .sidebar button:hover {
+    font-size: 18px;
+    color: $nav-el-hv;
+  }
+
+  .nav-btn {
+    color: $nav-el;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  /* MAIN */
+  
+
+/* MEDIA STYLES */
+  @media only screen and (max-width: 825px) {
+    .nav-text {
+      visibility: hidden;
+      overflow: hidden;
+    }
+
+    #browser-window {
+      height: 96vh;
+      width: 90vw;
+      margin-left: 6vw;
+    }
+
+    nav {
+      width: 52px;
+    }
+    .nav-btn {
+      width: 52px;
+    }
+  }
