@@ -1,6 +1,6 @@
-![larger window](assets/large.png)
+![larger window](./public/images/large.png)
 
-![smaller window](assets/small.png)
+![smaller window](./public/images/small.png)
 
 Created a navigation menu...
 
