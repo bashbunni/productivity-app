@@ -46,22 +46,23 @@ function App() {
       {isOpen && <Popup
         content={<>
           <Form>
-            <Form.Group controlId="habitName">
-              <Form.Label>Habit Name</Form.Label>
-              <Form.Control type="text" placeholder="reading" />
-            </Form.Group>
-            <Form.Group controlId="habitUnits">
-              <Form.Label>Unit of Measure</Form.Label>
-              <Form.Control type="text" placeholder="chapters" />
-            </Form.Group>
-            <Form.Group controlId="habitIcon">
-              <Form.Label>Icon</Form.Label>
+            <div class="newHabitForm">
+              <label for="habitName">Habit Name</label>
+              <input type="text" id="habitName" required />
+            </div>
+            <div class="newHabitForm">
+              <label for="uom">Unit of Measure</label>
+              <input type="text" id="uom" required />
+            </div>
+            <div class="newHabitForm">
+              <label>Icon</label>
               <IconsList />
-            </Form.Group>
-            <Form.Group controlId="habitColor">
+            </div>
+            <div class="newHabitForm">
               <Form.Label>Color</Form.Label>
               <SketchPicker />
-            </Form.Group>
+            </div>
+            <button class="submit-btn" >Submit</Button>
           </Form>
         </>}
         handleClose={togglePopup}
