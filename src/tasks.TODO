@@ -1,3 +1,21 @@
 "add habit" functionality:
-    ☐ Write function for click event
-    ☐ Design pop-up form
+    ✔ Write function for click event @done(21-01-16 18:33)
+    ✔ Design pop-up form @done(21-01-16 18:33)
+    ☐ move pop-up to middle of screen responsively
+    ☐ get colour picker working
+    ☐ fix formatting on popup
+    ☐ Add submit button
+    ☐ Submit button functionality
+        ☐ add new value to nav
+        ☐ (eventually) create calendar for habit
+
+Home page:
+    ☐ habits overview
+    ☐ add tracking calendar
+
+MVP functions:
+    ☐ Add habits
+    ☐ Remove habits
+    ☐ Counter for habits that resets daily
+    ☐ calendar tracking of habit
+    
