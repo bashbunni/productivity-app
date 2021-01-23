@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './fontawesome'; // fa icons library
+import './Components/fontawesome'; // fa icons library
 
 ReactDOM.render(
   <React.StrictMode>
