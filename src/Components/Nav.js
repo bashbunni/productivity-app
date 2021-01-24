@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Popup from './Popup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { render } from '@testing-library/react';
 
 class Nav extends Component {
     render() {
@@ -19,7 +17,7 @@ class Nav extends Component {
                 <button className="nav-btn" id="github"><FontAwesomeIcon icon={["fab", "github"]} />
                     <p className="nav-text">Github</p>
                 </button>
-                <button className="nav-btn" id="add" onClick={this.props.openPopup}><FontAwesomeIcon icon={["fas", "plus-circle"]} />
+                <button className="nav-btn" id="add" onClick={this.props.openModal}><FontAwesomeIcon icon={["fas", "plus-circle"]} />
                     <p className="nav-text">New</p>
                 </button>
             </nav>
