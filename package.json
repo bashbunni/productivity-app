@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^12.6.0",
     "bootstrap": "^4.5.3",
     "express": "^4.17.1",
+    "history": "^5.0.0",
     "react": "^17.0.1",
     "react-awesome-modal": "^2.0.5",
     "react-bootstrap": "^1.4.3",
@@ -50,5 +51,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.13",
+    "@babel/preset-env": "^7.12.13"
   }
 }

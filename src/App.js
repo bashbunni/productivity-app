@@ -8,7 +8,7 @@ import Nav from './Components/Nav';
 import './styles/App.css';
 
 class App extends Component {
-  
+
 
 
   render() {
