@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Nav from '../Components/Nav';
-import IconsList from '../Components/IconsList';
+import Nav from './Nav';
+import IconsList from './IconsList';
 import Modal from 'react-awesome-modal';
 import NewHabitForm from '../Habit';
 

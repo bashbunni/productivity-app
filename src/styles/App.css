@@ -42,6 +42,12 @@ nav {
 }
 
 /* MAIN */
+.content {
+  margin-left: 125px;
+  position: fixed;
+  width: 80%;
+}
+
 /* POPUP */
 .newHabitForm {
   padding: 10px;
@@ -70,6 +76,9 @@ nav {
   }
   .nav-btn {
     width: 52px;
+  }
+  .content {
+    margin-left: 52px;
   }
 }
 /*# sourceMappingURL=App.css.map */
