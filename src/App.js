@@ -1,7 +1,7 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import Home from './Components/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NewHabitForm from './Habit';
+import Habit from './Habit';
 import Modal from 'react-awesome-modal';
 import Nav from './Components/Nav';
 import Habit1 from './Components/Habit1';
@@ -27,11 +27,11 @@ class App extends Component {
                         <Routes>
                             <Route exact path="/" element={<Home />} />
                             <Route exact path="/habit1" element={<Habit1 />} />
-                            <Route exact path="/newhabit" element={<NewHabitForm />} />
+                            <Route exact path="/newhabit" element={<Habit />} />
                         </Routes>
                     </div>
                     <Modal visible={this.visible} width="400" height="600px" effect="fadeInUp" onClickAway={this.closeModal}>
-                        <NewHabitForm />
+                        <Habit />
                     </Modal>
                 </div>
             </Router>

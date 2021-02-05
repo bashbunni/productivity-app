@@ -1,9 +1,24 @@
-$nav-bg: #350077;
-$nav-el: #818181;
-$nav-el-hv: #f1f1f1;
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&family=Shrikhand&display=swap');
 
-body {
-  font-family: 'Courier New', Courier, monospace;
+/* VARIABLES */
+
+$nav-bg: #222444; 
+$nav-el: #fcd8bc;
+$nav-el-hv: #818181;
+$content-bg: #21282c;
+$content-header: #fcd8bc;
+$content-txt: #818181;
+/* APP-WIDE PREFS*/
+
+body, p {
+  font-family: 'Scope One', Helvetica, Arial, sans-serif;
+  color: $content-txt;
+}
+
+h1 {
+  font-family: 'Shrikhand', Georgia, serif;
+  color: $content-header;
 }
 
 /* SIDEBAR */
@@ -47,22 +62,51 @@ nav {
 
   /* MAIN */
 
+  .app {
+    margin: 0px;
+  }
+
   .content {
-    margin-left: 125px;
+    top: 0px;
+    left: 125px;
+    padding: 6px 8px 6px 16px;
     position: fixed;
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    background-color: $content-bg;
+    overflow: scroll;
   }
 
   /* POPUP */
 	
   .newHabitForm {
-    padding: 10px;
+    padding-left: 20px;
     box-sizing: border-box; 
     display: block;
   }
   
   .newHabitForm label {
     display: block;
+    padding-top: 20px;
+  }
+
+  .submit-btn {
+    font-family: 'Shrikhand', Georgia, serif;
+    color:$content-txt;
+    background-color: $content-bg;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 10%;
+    border: none;
+    transition-duration: .5s;
+    transform: rotateX(45deg);
+    cursor: pointer;
+    &:hover {
+      color: $content-header;
+      background-color: $nav-bg;
+    }
   }
 
   
@@ -88,6 +132,7 @@ nav {
     }
 
     .content {
-      margin-left: 52px;
+      top: 0px;
+      left: 50px;
     }
   }

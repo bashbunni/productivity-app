@@ -1,5 +1,15 @@
-body {
-  font-family: 'Courier New', Courier, monospace;
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Scope+One&family=Shrikhand&display=swap");
+/* VARIABLES */
+/* APP-WIDE PREFS*/
+body, p {
+  font-family: 'Scope One', Helvetica, Arial, sans-serif;
+  color: #818181;
+}
+
+h1 {
+  font-family: 'Shrikhand', Georgia, serif;
+  color: #fcd8bc;
 }
 
 /* SIDEBAR */
@@ -10,7 +20,7 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #350077;
+  background-color: #222444;
   overflow-x: hidden;
   padding-top: 16px;
 }
@@ -19,18 +29,18 @@ nav {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
-  color: #818181;
+  color: #fcd8bc;
   display: inline;
 }
 
 /* SIDEBAR ACTIONS */
 .sidebar button:hover {
   font-size: 18px;
-  color: #f1f1f1;
+  color: #818181;
 }
 
 .nav-btn {
-  color: #818181;
+  color: #fcd8bc;
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
@@ -42,15 +52,24 @@ nav {
 }
 
 /* MAIN */
+.app {
+  margin: 0px;
+}
+
 .content {
-  margin-left: 125px;
+  top: 0px;
+  left: 125px;
+  padding: 6px 8px 6px 16px;
   position: fixed;
-  width: 80%;
+  width: 100%;
+  height: 100%;
+  background-color: #21282c;
+  overflow: scroll;
 }
 
 /* POPUP */
 .newHabitForm {
-  padding: 10px;
+  padding-left: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
@@ -58,6 +77,33 @@ nav {
 
 .newHabitForm label {
   display: block;
+  padding-top: 20px;
+}
+
+.submit-btn {
+  font-family: 'Shrikhand', Georgia, serif;
+  color: #818181;
+  background-color: #21282c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 10%;
+  border: none;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transform: rotateX(45deg);
+          transform: rotateX(45deg);
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  color: #fcd8bc;
+  background-color: #222444;
 }
 
 /* MEDIA STYLES */
@@ -78,7 +124,8 @@ nav {
     width: 52px;
   }
   .content {
-    margin-left: 52px;
+    top: 0px;
+    left: 50px;
   }
 }
 /*# sourceMappingURL=App.css.map */

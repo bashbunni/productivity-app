@@ -1,10 +1,16 @@
 import express from 'express';
+import apiRouter from './api/main';
 
-const app = express();
+const server = express();
 
-app.get('../src/hello', (req, res) => res.send('Hello!'));
+server.get('/', (req, res) => { res.send('Hello!') });
 
-app.listen(8000, () => {
+server.use('/api', apiRouter);
+
+server.listen(8000, () => {
     console.log('Listening on port 8000')
 })
 
+/*
+start server using cmd: $ npx babel-node server.js
+*/
