@@ -9,7 +9,8 @@ class Habit extends Component {
             name: '',
             uom: '',
             icon: '',
-            color: ''
+            color: '',
+            data: []
         };
         this.setName = this.setName.bind(this);
         this.setUom = this.setUom.bind(this);
