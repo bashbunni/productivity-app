@@ -9,7 +9,7 @@ body, p {
 
 h1 {
   font-family: 'Shrikhand', Georgia, serif;
-  color: #fcd8bc;
+  color: #ffffff;
 }
 
 /* SIDEBAR */
@@ -20,7 +20,7 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #222444;
+  background-color: #54a7ffad;
   overflow-x: hidden;
   padding-top: 16px;
 }
@@ -29,18 +29,17 @@ nav {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
-  color: #fcd8bc;
+  color: #000000e4;
   display: inline;
 }
 
 /* SIDEBAR ACTIONS */
 .sidebar button:hover {
   font-size: 18px;
-  color: #818181;
 }
 
 .nav-btn {
-  color: #fcd8bc;
+  color: #000000e4;
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
@@ -63,7 +62,7 @@ nav {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #21282c;
+  background-color: #000000e4;
   overflow: scroll;
 }
 
@@ -77,13 +76,17 @@ nav {
 
 .newHabitForm label {
   display: block;
-  padding-top: 20px;
+}
+
+.newHabitForm input {
+  margin-bottom: 20px;
 }
 
 .submit-btn {
+  display: block;
   font-family: 'Shrikhand', Georgia, serif;
   color: #818181;
-  background-color: #21282c;
+  background-color: #000000e4;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -102,8 +105,8 @@ nav {
 }
 
 .submit-btn:hover {
-  color: #fcd8bc;
-  background-color: #222444;
+  color: #ffffff;
+  background-color: #54a7ffad;
 }
 
 /* MEDIA STYLES */

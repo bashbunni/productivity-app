@@ -3,11 +3,10 @@
 
 /* VARIABLES */
 
-$nav-bg: #222444; 
-$nav-el: #fcd8bc;
-$nav-el-hv: #818181;
-$content-bg: #21282c;
-$content-header: #fcd8bc;
+$nav-bg: #54a7ffad; 
+$nav-el: #000000e4;
+$content-bg: #000000e4;
+$content-header: #ffffff;
 $content-txt: #818181;
 /* APP-WIDE PREFS*/
 
@@ -45,7 +44,6 @@ nav {
   /* SIDEBAR ACTIONS */
   .sidebar button:hover {
     font-size: 18px;
-    color: $nav-el-hv;
   }
 
   .nav-btn {
@@ -87,10 +85,14 @@ nav {
   
   .newHabitForm label {
     display: block;
-    padding-top: 20px;
+  }
+
+  .newHabitForm input {
+    margin-bottom: 20px;
   }
 
   .submit-btn {
+    display: block;
     font-family: 'Shrikhand', Georgia, serif;
     color:$content-txt;
     background-color: $content-bg;

@@ -1,31 +1,37 @@
-import React, { Component, useState } from 'react';
-import IconsList from './Components/IconsList';
+import React, { useState } from 'react';
 
 const Habit = (props) => {
-    const [name, setName] = useState('');
-    const [uom, setUom] = useState('');
-    const [icon, setIcon] = useState('');
+
+    const [habit, setHabit] = useState({ name: '', uom: '', icon: '' });
+
+    const handleInput = (e) => {
+        setHabit({ ...habit, [e.target.name]: e.target.value });
+    }
+
+    const onSubmit = (e) => {
+        e.preventDefault(); // prevent default submission
+        console.log(habit);
+
+    }
 
     return (
         <>
-            <form id="newHabit">
+            <form id="newHabit" onSubmit={onSubmit}>
                 <h1>Track a new habit</h1>
                 <div class="newHabitForm">
                     <label for="habitName">Habit Name</label>
-                    <input type="text" value={name} onChange={(e) => { setName(e.target.value) }} name="name" required />
+                    <input type="text" value={habit.name} onChange={handleInput} name="name" required />
 
                     <label for="uom">Unit of Measure</label>
-                    <input type="text" value={uom} onChange={(e) => { setUom(e.target.value) }} name="uom" required />
+                    <input type="text" value={habit.uom} onChange={handleInput} name="uom" required />
 
-                    <label>Icon</label>
-                    <IconsList value={icon} onChange={(e) => { setIcon(e.target.value) }} name="icon" />
                     <input class="submit-btn" type="submit" value="Submit" />
                 </div>
             </form>
             {
                 // TODO: don't forget to delete this line of code after testing
             }
-            <p>{name + " measured in " + uom}</p>
+            <p>{habit.name + " measured in " + habit.uom}</p>
             <p>for example, you can put Meditation for habit name, minutes as unit of measure.</p>
         </>
     );

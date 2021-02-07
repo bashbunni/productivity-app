@@ -20,6 +20,7 @@
     "react-dom": "^17.0.1",
     "react-fa-icon-picker": "^1.0.3",
     "react-fontawesome-list": "^0.1.0",
+    "react-icon-picker": "^1.0.0",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "4.0.1",
