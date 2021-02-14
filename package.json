@@ -55,6 +55,8 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/node": "^7.12.13",
-    "@babel/preset-env": "^7.12.13"
-  }
+    "@babel/preset-env": "^7.12.13",
+    "electron": "^11.2.3"
+  },
+  "main": "public/electron.js"
 }
