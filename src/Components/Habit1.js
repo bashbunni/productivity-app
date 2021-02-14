@@ -12,7 +12,7 @@ function Habit1() {
             { // TODO: clean up this test area below
             }
 
-            <img src={myImg} />
+            <img src={myImg} alt="sample data" />
         </div>
 
     );

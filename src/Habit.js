@@ -11,7 +11,8 @@ const Habit = (props) => {
     const onSubmit = (e) => {
         e.preventDefault(); // prevent default submission
         console.log(habit);
-
+        let habitJson = JSON.stringify(habit);
+        console.log(habitJson);
     }
 
     return (
@@ -28,9 +29,6 @@ const Habit = (props) => {
                     <input class="submit-btn" type="submit" value="Submit" />
                 </div>
             </form>
-            {
-                // TODO: don't forget to delete this line of code after testing
-            }
             <p>{habit.name + " measured in " + habit.uom}</p>
             <p>for example, you can put Meditation for habit name, minutes as unit of measure.</p>
         </>
