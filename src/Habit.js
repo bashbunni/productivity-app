@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import create from 'zustand';
 
 const Habit = (props) => {
 
@@ -13,6 +14,7 @@ const Habit = (props) => {
         console.log(habit);
         let habitJson = JSON.stringify(habit);
         console.log(habitJson);
+        props.addHabit(habit);
     }
 
     return (
@@ -22,7 +24,6 @@ const Habit = (props) => {
                 <div class="newHabitForm">
                     <label for="habitName">Habit Name</label>
                     <input type="text" value={habit.name} onChange={handleInput} name="name" required />
-
                     <label for="uom">Unit of Measure</label>
                     <input type="text" value={habit.uom} onChange={handleInput} name="uom" required />
 
