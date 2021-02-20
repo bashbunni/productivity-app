@@ -3,7 +3,7 @@ import create from 'zustand';
 
 const Habit = (props) => {
 
-    const [habit, setHabit] = useState({ name: '', uom: '', icon: '' });
+    const [habit, setHabit] = useState({ name: '', uom: '', data: [] }); // [Date obj, amt]
 
     const handleInput = (e) => {
         setHabit({ ...habit, [e.target.name]: e.target.value });

@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class Nav extends Component {
+const Nav = (props) => {
+
+    let habits = props.habitList.map((habit, index) => {
+        
+    })
+
     render() {
         return (
             <nav className="sidebar" >

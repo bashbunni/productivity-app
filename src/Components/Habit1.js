@@ -3,10 +3,11 @@ import Nav from './Nav';
 import myImg from '../styles/assets/d3-javascript-graphing-library.jpg';
 import CalendarHeatmap from 'react-calendar-heatmap';
 
-function Habit1() {
+function Habit1(props) {
     let currDate = new Date();
     let oneYearAgo = new Date().setFullYear(currDate.getFullYear() - 1);
 
+    const habits = props.habitList;
     console.log(oneYearAgo.toString());
     return (
         <div className="Home">
