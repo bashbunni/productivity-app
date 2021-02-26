@@ -1,21 +1,10 @@
-"add habit" functionality:
-    ✔ Write function for click event @done(21-01-16 18:33)
-    ✔ Design pop-up form @done(21-01-16 18:33)
-    ☐ move pop-up to middle of screen responsively
-    ☐ get colour picker working
-    ☐ fix formatting on popup
-    ☐ Add submit button
-    ☐ Submit button functionality
-        ☐ add new value to nav
-        ☐ (eventually) create calendar for habit
 
-Home page:
-    ☐ habits overview
-    ☐ add tracking calendar
+To do:
+✔ make nav element not suck @done(21-02-26 09:43)
+☐ make habit tabs on sidebar dynamic
+☐ array of habits saving as json to local storage
 
-MVP functions:
-    ☐ Add habits
-    ☐ Remove habits
-    ☐ Counter for habits that resets daily
-    ☐ calendar tracking of habit
-    
+
+Refactor:
+    ☐ change to TS 
+    ☐  
