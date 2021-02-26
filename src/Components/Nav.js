@@ -3,19 +3,23 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Nav = (props) => {
-
-    let habits = props.habitList.map((habit, index) => {
-
-    })
+	console.log(props.habitList);
+ /*	let habits = props.habitList.map((habit, index) => {
+	<Link to="/{habit.name}">
+            <button className="nav-btn" id="{habit.name}"><FontAwesomeIcon icon={["fab", "slack-hash"]} />
+                <p className="nav-text"></p>
+            </button>
+        </Link>
+    }) */
     return (
         <nav className="sidebar" >
             <Link to="/">
                 <button className="nav-btn" id="home"><FontAwesomeIcon icon={["fas", "igloo"]} />
-                    <p className="nav-text">Home</p>
-                </button>
+               <p className="nav-text">Home</p>
+	    </button> 
             </Link>
             <Link to="/habit1">
-                <button className="nav-btn" id="slack"><FontAwesomeIcon icon={["fab", "slack-hash"]} />
+	    	<button className="nav-btn" id="slack"><FontAwesomeIcon icon={["fab", "slack-hash"]} />
                     <p className="nav-text">Habit1</p>
                 </button>
             </Link>
@@ -24,13 +28,10 @@ const Nav = (props) => {
                     <p className="nav-text">Habit2</p>
                 </button>
             </Link>
-            <Link to="/newhabit">
-                <button className="nav-btn" id="add" onClick={this.props.toggleModal}><FontAwesomeIcon icon={["fas", "plus-circle"]} />
-                    <p className="nav-text">New</p>
-                </button>
+            <Link to="/newhabit" >
+	        <p className="nav-text">Add</p>
             </Link>
         </nav>
     );
 }
-
-export default Nav; 
+export default Nav;

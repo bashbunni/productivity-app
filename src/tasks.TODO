@@ -3,6 +3,8 @@ To do:
 ✔ make nav element not suck @done(21-02-26 09:43)
 ☐ make habit tabs on sidebar dynamic
 ☐ array of habits saving as json to local storage
+- add state to habitList 
+- add handling to empty array (ie no habits)
 
 
 Refactor:
