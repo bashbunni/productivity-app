@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -29,7 +29,9 @@ const Nav = (props) => {
                 </button>
             </Link>
             <Link to="/newhabit" >
-	        <p className="nav-text">Add</p>
+                <button className="nav-btn" id="gmail"><FontAwesomeIcon icon={["far", "plus-square"]} />
+                    <p className="nav-text">Add</p>
+                </button>
             </Link>
         </nav>
     );

@@ -1,6 +1,5 @@
 import React from 'react';
 import Nav from './Nav';
-import myImg from '../styles/assets/d3-javascript-graphing-library.jpg';
 import CalendarHeatmap from 'react-calendar-heatmap';
 
 function Habit1(props) {
@@ -26,7 +25,6 @@ function Habit1(props) {
                     ]}
                 />
             </div>
-            <img src={myImg} alt="sample data" />
         </div>
     );
 }

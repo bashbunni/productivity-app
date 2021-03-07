@@ -21,13 +21,13 @@ const Habit = (props) => {
         <>
             <form id="newHabit" onSubmit={onSubmit}>
                 <h1>Track a new habit</h1>
-                <div class="newHabitForm">
-                    <label for="habitName">Habit Name</label>
+                <div className="newHabitForm">
+                    <label htmlFor="habitName">Habit Name</label>
                     <input type="text" value={habit.name} onChange={handleInput} name="name" required />
-                    <label for="uom">Unit of Measure</label>
+                    <label htmlFor="uom">Unit of Measure</label>
                     <input type="text" value={habit.uom} onChange={handleInput} name="uom" required />
 
-                    <input class="submit-btn" type="submit" value="Submit" />
+                    <input className="submit-btn" type="submit" value="Submit" />
                 </div>
             </form>
             <p>{habit.name + " measured in " + habit.uom}</p>
