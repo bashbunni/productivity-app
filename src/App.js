@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Home from './Components/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Habit from './Habit';
-import Modal from 'react-awesome-modal';
 import Nav from './Components/Nav';
 import Habit1 from './Components/Habit1';
 import './styles/App.css';
@@ -28,9 +27,6 @@ const App = () => {
                         <Route exact path="/newhabit" element={<Habit addHabit={addHabit} />} />
                     </Routes>
                 </div>
-                <Modal visible={visible} width="400" height="600px" effect="fadeInUp" onClickAway={() => isVisible(false)}>
-                    <Habit />
-                </Modal>
             </div>
         </Router>
     );

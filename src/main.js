@@ -2,7 +2,7 @@ const electron = require('electron'); // because start field is def npm not elec
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
-// app.whenReady().then(createWindow)
+app.whenReady().then(createWindow)
 /*
 app.on('ready', () => {
     Object.assign(config.get('winBounds'));

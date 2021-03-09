@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 const Habit = (props) => {
 
     const [habit, setHabit] = useState({ name: '', uom: '', data: [] }); // [Date obj, amt]
